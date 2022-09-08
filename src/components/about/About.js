@@ -1,5 +1,6 @@
 import "./About.css";
-import Award from "../../img/award.png";
+import Award from "../../img/Award.jpg";
+import Award1 from '../../img/Award1.jpg'
 
 const About = () => {
     return (
@@ -17,22 +18,31 @@ const About = () => {
             <div className="a-right">
                 <h1 className="a-title">About Me</h1>
                 <p className="a-sub">
-                    It is a long established fact that a reader will be distracted by the
-                    readable content.
+                   " I’m a great believer in luck, and I find the harder I work the more I have of it " 
                 </p>
                 <p className="a-desc">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat duis aute irure dolor in reprehende.
+                    Hi my name is Manish and i am a Computer Science Student at Graphic Era University .
+                    I've been working with React for more than 2 years now and is fluent at it .
                 </p>
                 <div className="a-award">
-                    <img src={Award} alt="" className="a-award-img" />
+                    <a href="https://www.udemy.com/certificate/UC-baa71a75-0232-4e66-9b44-e28a7bebe95d/" target="_blank" rel="noreferrer">
+                        <img src={Award} alt="certification" className="a-award-img" />
+                    </a>
                     <div className="a-award-texts">
-                        <h4 className="a-award-title">International Design Awards 2021</h4>
+                        <h4 className="a-award-title">React Native Certification 2022</h4>
                         <p className="a-award-desc">
-                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur autodit
-                            and fugit.
+                            React Native Certification .
+                        </p>
+                    </div>
+                </div>
+                <div className="a-award">
+                    <a href="https://olympus.mygreatlearning.com/courses/52045/certificate" target="_blank" rel="noreferrer">
+                        <img src={Award1} alt="certification" className="a-award-img" />
+                    </a>
+                    <div className="a-award-texts">
+                        <h4 className="a-award-title">React JS Certification</h4>
+                        <p className="a-award-desc">
+                            React JS Certification from mygreatlearning .
                         </p>
                     </div>
                 </div>

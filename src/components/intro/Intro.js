@@ -10,17 +10,16 @@ const Intro = () => {
           <h1 className="i-name">Manish Singh Suyal</h1>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">App Developer</div>
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
               <div className="i-title-item">MERN Stack Developer</div>
+              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">App Developer</div>
+              <div className="i-title-item">UI/UX Designer</div>
               <div className="i-title-item">Content Creator</div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites, web services and
-            online stores.
+            I'm a Mobile Application Developer focused on the development
+            of cross-platform iOS & Android applications using React Native.
           </p>
         </div>
         <svg

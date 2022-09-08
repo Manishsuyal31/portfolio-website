@@ -1,8 +1,26 @@
 .c {
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
   
+  .c-texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .c-heading {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .c-heading-desc {
+    margin: 20px 0px;
+  }
+
   .c-bg {
     width: 20px;
     height: 100%;
@@ -11,7 +29,7 @@
   }
   
   .c-wrapper {
-    padding: 50px;
+    padding: 50px 100px 0px 100px;
     display: flex;
   }
   
@@ -74,17 +92,24 @@
   button {
     border: none;
     padding: 15px;
+    border-radius: 10px;
     background-color: #59b256;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
   }
+  
   button:hover {
     background-color: black;
     color: white;
   }
   
   @media screen and (max-width: 480px) {
+    
+    .c-texts{
+      display: none;
+    }
+
     .c-wrapper {
       flex-direction: column;
       padding: 0px 50px;

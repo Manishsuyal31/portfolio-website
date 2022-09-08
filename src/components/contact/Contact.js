@@ -21,7 +21,11 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
+          e.target.reset();
+          setTimeout(() => {
+            setDone(false);
+          },5000);
         },
         (error) => {
           console.log(error.text);
@@ -31,6 +35,12 @@ const Contact = () => {
 
   return (
     <div className="c">
+      <div className="c-texts">
+        <h className="c-heading">Contact Info.</h>
+        <p className="c-heading-desc">
+          Contact Info of mine , feel free to message me with you contact details i will revert back to you soon !
+        </p>
+      </div>
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
@@ -40,7 +50,7 @@ const Contact = () => {
               <img src={Phone} alt="" className="c-icon" />
               +91 91190 96586
             </div>
-            <div classNabme="c-info-item">
+            <div className="c-info-item">
               <img className="c-icon" src={Email} alt="" />
               manishsuyal948@gmail.com
             </div>
@@ -61,7 +71,7 @@ const Contact = () => {
             <input type="text" placeholder="Email" name="from_email" />
             <textarea rows="5" placeholder="Message" name="message" />
             <button>Submit</button>
-            {done && "Thank you, your message has been delivered..."}
+            {done && " Thank you, your message has been delivered..."}
           </form>
         </div>
       </div>
