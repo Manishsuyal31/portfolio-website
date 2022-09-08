@@ -70,6 +70,7 @@
   
   form {
     margin-top: 20px;
+    border-radius: 10px;
   }
   
   input {
@@ -80,6 +81,7 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border-radius: 10px;
   }
   
   textarea {
@@ -87,6 +89,7 @@
     margin: 10px 0px;
     font-size: 14px;
     padding-left: 10px;
+    border-radius: 10px;
   }
   
   button {

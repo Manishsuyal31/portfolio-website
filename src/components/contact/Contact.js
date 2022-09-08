@@ -34,9 +34,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="c">
+    <div className="c" id='contact'>
       <div className="c-texts">
-        <h className="c-heading">Contact Info.</h>
+        <h className="c-heading">Contact info.</h>
         <p className="c-heading-desc">
           Contact Info of mine , feel free to message me with you contact details i will revert back to you soon !
         </p>
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
+            <b>What’s your story ?</b> Get in touch. Always available for
             freelancing if the right project comes along.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
