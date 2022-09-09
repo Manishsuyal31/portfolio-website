@@ -21,13 +21,13 @@ const Navbar = () => {
         <div className="n">
             <div className="n-wrapper">
                 <ul className="n-list">
-                    <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
+                    <Link>
                         <li className="n-icon">
                             <img src={Icon} alt="icon" className="n-img"/>
                         </li>
                     </Link>
-                    <Link>
-                        <li className="n-icon-name">PORTFOLIO WEBSITE   |</li>
+                    <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
+                        <li className="n-items" id='n-item'>PORTFOLIO WEBSITE</li>
                     </Link>
                     <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
                         <li className="n-items">Home</li>

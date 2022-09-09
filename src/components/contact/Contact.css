@@ -1,8 +1,9 @@
 .c {
-    height: 100vh;
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
   }
   
   .c-texts{
@@ -109,9 +110,25 @@
   
   @media screen and (max-width: 480px) {
     
-    .c-texts{
-      display: none;
+    .c {
+      height: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: 40px 0px 40px 0px;
+      padding-bottom: 30px;
     }
+     .c-left{
+       margin-bottom: 10px;
+     }
+     
+     .c-heading-desc {
+       margin: 20px 20px 20px 40px;
+     }
+     
+    /* .c-texts{
+      display: none;
+    } */
 
     .c-wrapper {
       flex-direction: column;
@@ -127,9 +144,9 @@
       width: 100%;
     }
   
-    .c-desc {
+    /* .c-desc {
       display: none;
-    }
+    } */
   
     form {
       margin-top: 0px;

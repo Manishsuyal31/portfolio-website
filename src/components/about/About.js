@@ -36,7 +36,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="a-award">
-                    <a href="https://olympus.mygreatlearning.com/courses/52045/certificate" target="_blank" rel="noreferrer">
+                    <a href="https://olympus1.mygreatlearning.com/course_certificate/PQNPMHRN" target="_blank" rel="noreferrer">
                         <img src={Award1} alt="certification" className="a-award-img" />
                     </a>
                     <div className="a-award-texts">
