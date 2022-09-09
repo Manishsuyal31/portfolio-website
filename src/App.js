@@ -18,7 +18,7 @@ const App = () => {
       }}
     >
       <Navbar />
-      <Toggle />
+      {/* <Toggle /> */}
       <Intro />
       <About />
       <ProductList />
