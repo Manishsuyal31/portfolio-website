@@ -63,6 +63,13 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+    .n {
+        height: 10vh;
+        width: 100%;
+        background-color: transparent;
+        position: relative;
+        z-index: 1;
+    }
     .n-items {
         display: none;
     }
