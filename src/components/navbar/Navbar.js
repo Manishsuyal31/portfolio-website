@@ -1,8 +1,16 @@
+import { useState } from "react";
 import "./Navbar.css";
 import { Link } from 'react-scroll';
-import Icon from '../../img/icon.png'
+import * as FaIcons from 'react-icons/fa';
+import Sidebar from "../sidebar/Sidebar";
 
 const Navbar = () => {
+
+    const [sidebar, setSidebar] = useState(false);
+    const showSidebar = () => {
+
+        setSidebar(!sidebar);
+    };
 
     const onButtonClick = () => {
         fetch('resume.pdf').then(response => {
@@ -20,10 +28,11 @@ const Navbar = () => {
     return (
         <div className="n">
             <div className="n-wrapper">
+                <Sidebar showSidebar={showSidebar} sidebar={sidebar} onButtonClick={onButtonClick}/>
                 <ul className="n-list">
                     <Link>
                         <li className="n-icon">
-                            <img src={Icon} alt="icon" className="n-img"/>
+                            <FaIcons.FaBars className="n-bar" onClick={showSidebar} />
                         </li>
                     </Link>
                     <Link to='home' spy={true} smooth={true} offset={50} duration={500}>
@@ -35,7 +44,7 @@ const Navbar = () => {
                     <Link to='about' spy={true} smooth={true} offset={50} duration={500}>
                         <li className="n-items">About</li>
                     </Link>
-                    <Link to='work' spy={true} smooth={true} offset={50} duration={500}>
+                    <Link to='/work' spy={true} smooth={true} offset={50} duration={500}>
                         <li className="n-items">Work</li>
                     </Link>
                     <Link to='contact' spy={true} smooth={true} offset={50} duration={500}>
