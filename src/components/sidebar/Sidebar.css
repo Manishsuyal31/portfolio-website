@@ -1,5 +1,5 @@
 .n-sidebar {
-    background-color: black;
+    background-color: #222;
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .n-sidebar-active {
-    background-color: black;
+    background-color: #222;
     width: 50vw;
     height: 100vh;
     display: flex;
