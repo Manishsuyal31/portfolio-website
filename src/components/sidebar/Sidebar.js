@@ -22,7 +22,7 @@ const Sidebar = ({showSidebar, sidebar, onButtonClick}) => {
                     <li className="n-sidebar-item">Contact</li>
                 </Link>
                 <Link onClick={onButtonClick}>
-                    <li className="n-sidebar-item">Download Resume</li>
+                    <li className="n-sidebar-item">Resume</li>
                 </Link>
             </ul>
         </div>

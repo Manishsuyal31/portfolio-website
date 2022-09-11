@@ -24,7 +24,7 @@
 
 .n-sidebar-toggle {
     display: flex;
-    padding: 20px 0px 35px 35px;
+    padding: 20px 0px 20px 30px;
 }
 
 .n-sidebar-items{
@@ -35,7 +35,7 @@
     display: flex;
     justify-self: start;
     align-items: center;
-    padding: 5px 20px 5px 40px;
+    padding: 0px 10px 5px 35px;
     height: 60px;
     font-size: 20px;
     cursor: pointer;
