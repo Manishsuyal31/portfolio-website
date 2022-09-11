@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Link } from 'react-scroll';
 import * as FaIcons from 'react-icons/fa';
 import Sidebar from "../sidebar/Sidebar";
+import Toggle from "../toggle/Toggle"
 
 const Navbar = () => {
 
@@ -54,6 +55,7 @@ const Navbar = () => {
                         <li className="n-items" onClick={onButtonClick}>Download resume</li>
                     </Link>
                 </ul>
+                <Toggle />
             </div>
         </div>
     )
